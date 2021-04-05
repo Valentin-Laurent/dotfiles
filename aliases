@@ -5,3 +5,7 @@ alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 export GOOGLE_APPLICATION_CREDENTIALS=/Users/valentinlaurent/code/Valentin-Laurent/LeWagon/LeWagon-d81431dfae5d.json
+
+# Handy alias for a common directory
+alias cdvl='cd /Users/valentinlaurent/code/Valentin-Laurent'
+alias cddc='cd /Users/valentinlaurent/code/Valentin-Laurent/LeWagon/data-challenges'
