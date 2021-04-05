@@ -49,3 +49,6 @@
 
 [pull]
   rebase = false
+[user]
+	email = valentin.laurent.fr@gmail.com
+	name = Valentin Laurent
