@@ -1,4 +1,7 @@
-This repository is used by [Le Wagon](https://www.lewagon.com) students.
+# Dotfiles #
+My dotfiles
+
+I forked this repository when attending [Le Wagon](https://www.lewagon.com) Data Science bootcamp.
 
 ## Toolset
 
