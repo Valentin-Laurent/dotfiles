@@ -80,9 +80,10 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.i
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
 
-# Adding a custom package used at Le Wagon to the PYTHONPATH.
+# Adding a custom packages used at Le Wagon to the PYTHONPATH.
 # TODO: Remove when done with it
 export PYTHONPATH="/Users/valentinlaurent/code/Valentin-Laurent/Perso/ProjectSpotify:$PYTHONPATH"
+export PYTHONPATH="/Users/valentinlaurent/code/Valentin-Laurent/LeWagon/data-challenges/latest-data-challenges/04-Decision-Science:$PYTHONPATH"
 
 # Defining directory abreviations using 'named directories'
 hash -d pers=/Users/valentinlaurent/code/Valentin-Laurent/Perso
