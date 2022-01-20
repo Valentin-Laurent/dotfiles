@@ -4,20 +4,12 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-<<<<<<< HEAD
-plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv)
-=======
 plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
->>>>>>> 84fa89c (Finishing Le Wagon setup)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
 
-<<<<<<< HEAD
-# Disable warning about insecure completion-dependent directories
-=======
 # Prevent the "Insecure completion-dependent directories detected:" error
->>>>>>> 84fa89c (Finishing Le Wagon setup)
 ZSH_DISABLE_COMPFIX=true
 
 # Actually load Oh-My-Zsh
@@ -73,6 +65,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
+export EDITOR=code
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
@@ -80,11 +73,14 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.i
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
 
-# Adding a custom package used at Le Wagon to the PYTHONPATH.
+# Adding a package I'm working on to the PYTHONPATH.
 # TODO: Remove when done with it
 export PYTHONPATH="/Users/valentinlaurent/code/Valentin-Laurent/Perso/ProjectSpotify:$PYTHONPATH"
 
 # Defining directory abreviations using 'named directories'
 hash -d pers=/Users/valentinlaurent/code/Valentin-Laurent/Perso
-hash -d dc=/Users/valentinlaurent/code/Valentin-Laurent/LeWagon/data-challenges
+hash -d cha=/Users/valentinlaurent/code/Valentin-Laurent/LeWagon/data-challenges
 hash -d down=/Users/valentinlaurent/Downloads
+
+# Use ipdb as the default debugging tool for Python breakpoint
+export PYTHONBREAKPOINT=ipdb.set_trace
