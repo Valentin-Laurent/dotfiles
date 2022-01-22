@@ -23,13 +23,11 @@ symlink() {
 
 # For all files `$name` in the present folder except `*.sh`, `README.md`, `settings.json`,
 # and `config`, backup the target file located at `~/.$name` and symlink `$name` to `~/.$name`
-for name in *; do
+for name in aliases gitconfig irbrc rspec zprofile zshrc; do
   if [ ! -d "$name" ]; then
     target="$HOME/.$name"
-    if [[ ! "$name" =~ '\.sh$' ]] && [ "$name" != 'README.md' ] && [[ "$name" != 'settings.json' ]] && [[ "$name" != 'config' ]]; then
-      backup $target
-      symlink $PWD/$name $target
-    fi
+    backup $target
+    symlink $PWD/$name $target
   fi
 done
 
@@ -70,6 +68,6 @@ if [[ `uname` =~ "Darwin" ]]; then
 fi
 
 # Refresh the current terminal with the newly installed configuration
-zsh ~/.zshrc
+exec zsh
 
 echo "👌 Carry on with git setup!"
