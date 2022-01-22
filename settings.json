@@ -61,7 +61,7 @@
         "**/tmp/**": true,
         "**/vendor/**": true
     },
-    "git.enabled": false,
+    "git.enabled": true,
     "python.defaultInterpreterPath": "~/.pyenv/shims/python",
     "python.formatting.provider": "yapf",
     "python.terminal.activateEnvironment": false,
@@ -79,8 +79,5 @@
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    }
+    "workbench.startupEditor": "newUntitledFile"
 }

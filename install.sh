@@ -42,7 +42,7 @@ if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
 fi
 cd "$CURRENT_DIR"
 
-# Symlink VS Code settings to the present `settings.json` file
+# Symlink VS Code settings and keybindings to the present `settings.json` and `keybindings.json` files
 # If it's a macOS
 if [[ `uname` =~ "Darwin" ]]; then
   CODE_PATH=~/Library/Application\ Support/Code/User
@@ -54,12 +54,14 @@ else
     CODE_PATH=~/.vscode-server/data/Machine
   fi
 fi
-target="$CODE_PATH/settings.json"
-backup $target
-symlink $PWD/settings.json $target
 
-# Symlink SSH config file to the present `config` file for macOS and add SSH
-# passphrase to the keychain
+for name in settings.json keybindings.json; do
+  target="$CODE_PATH/$name"
+  backup $target
+  symlink $PWD/$name $target
+done
+
+# Symlink SSH config file to the present `config` file for macOS and add SSH passphrase to the keychain
 if [[ `uname` =~ "Darwin" ]]; then
   target=~/.ssh/config
   backup $target
