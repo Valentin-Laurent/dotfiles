@@ -84,3 +84,13 @@ hash -d down=/Users/valentinlaurent/Downloads
 
 # Use ipdb as the default debugging tool for Python breakpoint
 export PYTHONBREAKPOINT=ipdb.set_trace
+
+# Environnement variables needed for limbomp (LLVM OpenMP library)
+# limbomp is a brew package that enable OpenMP support for the clang compiler shipped by default on macOS
+# I need it to build sklearn from source (and thus to contribute)
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+export CPPFLAGS="$CPPFLAGS -Xpreprocessor -fopenmp"
+export CFLAGS="$CFLAGS -I/usr/local/opt/libomp/include"
+export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/libomp/include"
+export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
