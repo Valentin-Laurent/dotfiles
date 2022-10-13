@@ -12,6 +12,7 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv virtualenv-init -)"
+RPROMPT+='$(pyenv version-name)'
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="robbyrussell"

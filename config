@@ -20,6 +20,7 @@ Host github-kering
   User git
   IdentityFile ~/.ssh/id_ed25518_kering
 
+# Config for Kering
 Host myserver.bdf-aifactory
     HostName vlaurent.ds.lab-aifactory.dev4apps.io
     UserKnownHostsFile /dev/null
@@ -30,6 +31,7 @@ Host myserver.bdf-aifactory
     ForwardAgent yes
     DynamicForward 1087
 
+# Config for Kering
 Host bdf-aifactory.i-* bdf-aifactory.m-*
     UserKnownHostsFile /dev/null
     StrictHostKeyChecking no
