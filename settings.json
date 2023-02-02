@@ -68,10 +68,6 @@
     "python.linting.pylintEnabled": false,
     "python.linting.enabled": false,
     "python.linting.flake8Enabled": true,
-    // DataBricks integration:
-    "python.venvPath": "/Users/vlaurent/.pyenv/versions/kering/lib/python3.8/site-packages/pyspark/jars",
-
-
     "ruby.lint":
     {
         "rubocop": true
