@@ -54,13 +54,13 @@ fi
 
 # Defining directory abreviations using 'named directories'
 if [ $PERSO ]; then
-hash -d pers=/Users/valentinlaurent/code/Valentin-Laurent/Perso
-hash -d cha=/Users/valentinlaurent/code/Valentin-Laurent/LeWagon/data-challenges
-hash -d down=/Users/valentinlaurent/Downloads
+hash -d pers=~/code/Valentin-Laurent/Perso
+hash -d cha=~/code/Valentin-Laurent/LeWagon/data-challenges
+hash -d down=~/Downloads
 else
-hash -d pro=/Users/vlaurent/code/pro
-hash -d pers=/Users/vlaurent/code/perso
-hash -d down=/Users/vlaurent/Downloads
+hash -d pro=~/code/pro
+hash -d pers=~/code/perso
+hash -d down=~/Downloads
 fi
 
 # Use ipdb as the default debugging tool for Python breakpoint
