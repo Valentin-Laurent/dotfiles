@@ -18,7 +18,7 @@ Host github-gucci
 Host github-kering
   HostName github.com
   User git
-  IdentityFile ~/.ssh/id_ed25518_kering
+  IdentityFile ~/.ssh/id_ed25519_kering
 
 Host myserver.bdf-aifactory
     HostName vlaurent.ds.lab-aifactory.dev4apps.io
