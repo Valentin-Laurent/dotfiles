@@ -76,7 +76,7 @@
     "window.restoreWindows": "none",
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.colorTheme": "Quiet Light",
-    "workbench.settings.editor": "json",
+    "workbench.settings.editor": "ui",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.startupEditor": "newUntitledFile",
