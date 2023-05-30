@@ -81,5 +81,33 @@
     "workbench.settings.useSplitJSON": true,
     "workbench.startupEditor": "newUntitledFile",
     "autoDocstring.docstringFormat": "sphinx",
-    "editor.guides.indentation": false
+    "editor.guides.indentation": false,
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.colors": [
+
+      "rgba(255,255,64,0.3)",
+      "rgba(127,255,127,0.3)",
+      "rgba(255,127,255,0.3)",
+      "rgba(79,236,236,0.3)"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "chatgpt.emailAddress": "",
+    "chatgpt.authenticationType": "Google Authentication",
+    "gitlens.views.commitDetails.files.layout": "tree",
+    "todo-tree.general.tags": [
+      "BUG",
+      "HACK",
+      "FIXME",
+      "TODO",
+      "REFACTOR",
+      "[ ]",
+      "[x]"
+    ],
+    "genieai.openai.temperature": 0.5,
+    "genieai.telemetry.disable": true,
+    "genieai.enableConversationHistory": true,
+    "gitlens.views.branches.branches.layout": "list",
+    "vsicons.dontShowNewVersionMessage": true,
+    "customWindowZoom.zoomLevelChangeValue": 0.2,
+    "window.zoomLevel": 0.55
 }

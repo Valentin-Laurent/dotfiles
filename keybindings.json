@@ -9,5 +9,29 @@
     "key": "cmd+shift+v",
     "command": "pasteAndIndent.action",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "cmd+-",
+    "command": "extension.customWindowZoomOut"
+  },
+  {
+    "key": "cmd+8",
+    "command": "-extension.customWindowZoomOut"
+  },
+  {
+    "key": "cmd+=",
+    "command": "extension.customWindowZoomIn"
+  },
+  {
+    "key": "cmd+9",
+    "command": "-extension.customWindowZoomIn"
   }
 ]
