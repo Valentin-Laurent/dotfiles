@@ -8,34 +8,8 @@ Host github.com
   User git
   IdentityFile ~/.ssh/id_ed25519_perso
 
-# Config for Gucci
-Host github-gucci
-  HostName github.com
+# Example config for XXX
+Host github-xxx
+  HostName xxx
   User git
-  IdentityFile ~/.ssh/id_ed25519_gucci
-
-# Config for Kering
-Host github-kering
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/id_ed25519_kering
-
-Host myserver.bdf-aifactory
-    HostName vlaurent.ds.lab-aifactory.dev4apps.io
-    UserKnownHostsFile /dev/null
-    StrictHostKeyChecking no
-    IdentitiesOnly yes
-    User ec2-user
-    IdentityFile ~/.ssh/aifactory_ds
-    ForwardAgent yes
-    DynamicForward 1087
-
-Host bdf-aifactory.i-* bdf-aifactory.m-*
-    UserKnownHostsFile /dev/null
-    StrictHostKeyChecking no
-    IdentitiesOnly yes
-    User ec2-user
-    IdentityFile ~/.ssh/aifactory_ds
-    ForwardAgent yes
-    DynamicForward 1087
-    ProxyCommand bash -c "aws --profile bdf-aifactory ssm start-session --target `echo %h | cut -d. -f2` --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
+  IdentityFile ~/.ssh/id_ed25519_xxx
