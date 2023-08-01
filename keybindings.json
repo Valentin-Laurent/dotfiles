@@ -33,5 +33,15 @@
   {
     "key": "cmd+9",
     "command": "-extension.customWindowZoomIn"
+  },
+  {
+    "key": "right",
+    "command": "notebook.unfold",
+    "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "right",
+    "command": "-notebook.unfold",
+    "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
   }
 ]

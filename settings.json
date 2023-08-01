@@ -109,5 +109,5 @@
     "gitlens.views.branches.branches.layout": "list",
     "vsicons.dontShowNewVersionMessage": true,
     "customWindowZoom.zoomLevelChangeValue": 0.2,
-    "window.zoomLevel": 0.55
+    "window.zoomLevel": -0.2
 }
