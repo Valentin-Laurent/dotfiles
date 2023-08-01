@@ -8,6 +8,12 @@ Host github.com
   User git
   IdentityFile ~/.ssh/id_ed25519_perso
 
+# QM Gitlab
+Host gitlab-qm
+  HostName gitlab.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_gitlab_qm
+
 # Example config for XXX
 Host github-xxx
   HostName xxx

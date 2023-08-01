@@ -46,6 +46,9 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.i
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
 
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
 # Adding a package I'm working on to the PYTHONPATH.
 # TODO: Remove when done with it
 if [ $PERSO ]; then
@@ -78,3 +81,9 @@ export CFLAGS="$CFLAGS -I/usr/local/opt/libomp/include"
 export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/libomp/include"
 export LDFLAGS="$LDFLAGS -Wl,-rpath,/usr/local/opt/libomp/lib -L/usr/local/opt/libomp/lib -lomp"
 fi
+
+# QM Gitlab auth token
+export GITLAB_AUTH_TOKEN=`cat ~pers/dotfiles/gitlab_auth_token_qm.txt`
+
+# Created by `pipx` on 2023-07-27 14:14:58
+export PATH="$PATH:/Users/vlaurent/.local/bin"
