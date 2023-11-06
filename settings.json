@@ -109,5 +109,7 @@
     "gitlens.views.branches.branches.layout": "list",
     "vsicons.dontShowNewVersionMessage": true,
     "customWindowZoom.zoomLevelChangeValue": 0.2,
+    "diffEditor.experimental.showMoves": true,
+    "python.experiments.optInto": ["pythonREPLSmartSend"],
     "window.zoomLevel": -0.2
 }
