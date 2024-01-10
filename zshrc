@@ -43,11 +43,15 @@ export EDITOR=code
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
+# Command completion
+## For gcloud
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
-
-# Load Angular CLI autocompletion.
+## For Angular
 source <(ng completion script)
+# For Terraform & Terragrunt
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+complete -o nospace -C /opt/homebrew/bin/terragrunt terragrunt
 
 # Adding a package I'm working on to the PYTHONPATH.
 # TODO: Remove when done with it
@@ -84,6 +88,3 @@ fi
 
 # QM Gitlab auth token
 export GITLAB_AUTH_TOKEN=`cat ~pers/dotfiles/gitlab_auth_token_qm.txt`
-
-# Created by `pipx` on 2023-07-27 14:14:58
-export PATH="$PATH:/Users/vlaurent/.local/bin"
